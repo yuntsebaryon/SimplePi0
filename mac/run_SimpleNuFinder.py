@@ -17,14 +17,16 @@ for x in xrange(len(sys.argv)-1):
     my_proc.add_input_file(sys.argv[x+1])
 
 finder = fmwk.SimpleNuFinder()
+finder.SetInputProducer( "pandoraNu" )
+finder.SetOutputProducer( "pandoraNuMod" )
 
 # Specify IO mode
 my_proc.set_io_mode(fmwk.storage_manager.kBOTH)
 
 # Specify output root file name
-my_proc.set_ana_output_file("test_ana.root");
+my_proc.set_ana_output_file("larlite_mod_vertex_ana.root");
 
-my_proc.set_output_file("out.root");
+my_proc.set_output_file("larlite_mod_vertex.root");
 
 # Attach an analysis unit ... here we use a base class which does nothing.
 # Replace with your analysis unit if you wish.
