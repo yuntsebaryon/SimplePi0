@@ -54,6 +54,7 @@ namespace larlite {
           auto daughter_pfpart = (*ev_pfpart)[daughter];
           if ( daughter_pfpart.PdgCode() == 11 ) ++nShowers;
         }
+        std::cout << "Number of daughter showers: " << nShowers << std::endl;
         if ( nShowers == 2 ) InterestedNu.push_back( ipfp );
       }
     }

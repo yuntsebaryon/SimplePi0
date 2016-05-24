@@ -57,7 +57,6 @@ namespace larlite {
   protected:
     std::string _input_producer;
     std::string _output_producer;
-    
   };
 }
 #endif
