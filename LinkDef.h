@@ -13,8 +13,10 @@
 #pragma link C++ class larlite::SimplePi0Finder+;
 #pragma link C++ class larlite::EventFilter+;
 #pragma link C++ class larlite::MultiShowerPi0Finder+;
+#pragma link C++ class Pi0Helper+;
 //ADD_NEW_CLASS ... do not change this line
 #endif
+
 
 
 
